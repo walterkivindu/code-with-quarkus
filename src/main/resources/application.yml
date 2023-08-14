@@ -1,0 +1,14 @@
+greeting:
+  message: "hello"
+
+quarkus:
+  hibernate-orm:
+      database:
+        generation: update
+  datasource:
+      password: postgres
+      username: postgres
+      db-kind: pg
+      reactive:
+        url: vertx-reactive:postgresql://localhost:5432/quarkas
+
